@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "serve": "node node/service.js ",
+    "service": "node node/service.js ",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"

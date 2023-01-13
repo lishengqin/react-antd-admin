@@ -10,9 +10,6 @@ export default defineConfig({
     hmr: true,
     proxy: {
       '^/admin': {
-        // target: 'http://dev-jiangshan-tzyjs-apiadmini.hzanchu.com',
-        // target: 'http://pre-jiangshan-tzyjs-apiadmini.hzanchu.com',
-        // target: 'https://jiangshan-tzyjs-apiadmini.zjsszxc.com',
         target: " http://localhost:8888/",
         secure: false,
         changeOrigin: true,
