@@ -1,0 +1,145 @@
+.masterPageCon {
+  min-height: 650px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  background-image: url('../../assets/loginBac.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.centerCon {
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 922px;
+  height: 650px;
+  background-image: url('../../assets/loginFormBac.png');
+  .leftPart {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 60px;
+    box-sizing: border-box;
+    .hrLine {
+      width: 44px;
+      height: 4px;
+      background-color: #fff;
+      margin-bottom: 20px;
+    }
+    .welcome {
+      line-height: 24px;
+      font-size: 24px;
+      text-align: left;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+    .name {
+      line-height: 24px;
+      font-size: 24px;
+      text-align: left;
+      color: #fff;
+      letter-spacing: 1px;
+      margin-bottom: 40px;
+    }
+  }
+  .rightPart {
+    width: 560px;
+    height: 560px;
+    padding-left: 0;
+    padding-right: 40px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+    .formCon {
+      width: 424px;
+      margin: 0 auto;
+      padding-top: 70px;
+      box-sizing: border-box;
+
+      .formitem {
+        width: 100%;
+        height: 53px;
+        opacity: 0.8;
+        border: 1px solid #999999;
+        border-radius: 4px;
+        padding-left: 26px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        overflow: hidden;
+        margin-top: 40px;
+        margin-bottom: 112px;
+        &:first-child {
+          margin: 0;
+        }
+        .account {
+          width: 18px;
+          height: 20px;
+          margin-right: 12px;
+        }
+        .formiteminput {
+          width: 480px;
+        }
+      }
+      .loginBtn {
+        width: 100%;
+        height: 53px;
+        opacity: 1;
+        background-color: #0270c3;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 24px;
+        letter-spacing: 7px;
+        border: 1px solid transparent;
+        outline: 0;
+        cursor: pointer;
+        &[disabled] {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+.radioGroup {
+  font-size: 23px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  :global {
+    span {
+      font-size: 23px;
+    }
+
+    .ant-radio-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      &:first-child {
+        margin-right: 90px;
+        color: #0270c3;
+      }
+    }
+  }
+}
