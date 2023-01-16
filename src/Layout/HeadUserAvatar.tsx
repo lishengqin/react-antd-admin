@@ -12,8 +12,8 @@ function UserAvatar() {
     {
       label: "退出登录", key: "logOut", onClick: () => {
         adminLogout().then(res => {
-          LogoutClear();
-          navigate("/login")
+          window.location.href = '/login';
+          LogoutClear()
         })
       }
     }
