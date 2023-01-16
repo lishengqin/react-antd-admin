@@ -128,7 +128,7 @@ app.post('/admin/admin/get_permissions_navigate_list', function (req, res) {
     {
       id: 3,
       pid: 1,
-      name: '菜单1-A',
+      name: '公共组件介绍',
       mark: '/pressRelease/attractInvestment',
       icon: '',
       type: 1,
