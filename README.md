@@ -8,7 +8,7 @@ react+antd+ts，搭建的一个 react 项目的框架，包含 layout、登录�
 
 ```
 | /node - node express接口
-| /src -组件测试和文档
+| /src
 |- /components 公共组件
 |- /const 常量文件
 |- /Layout layout框架
