@@ -18,7 +18,7 @@ export function getAdminInfo(data?: any) {
 }
 /* 获取权限 */
 export function getPremissionList() {
-  let userInfo = localStorage.getItem("userInfo") || "";
+  let userInfo = localStorage.getItem("userInfo") || "{}";
   let username = JSON.parse(userInfo).username
   return request.post('/admin/get_permissions_navigate_list', { username });
 
