@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom"
 import { rsaGetPublicKey, adminLogin, getAdminInfo } from "@/service/login"
 import JSEncrypt from 'jsencrypt' // rsa加密
-import loginPerson from "@/assets/loginPerson.png"
-import loginPassword from "@/assets/loginPassword.png"
+import loginPerson from "@/assets/loginPerson.svg"
+import loginPassword from "@/assets/loginPassword.svg"
 function LoginPage() {
   const [radioValue, setRadioValue] = useState(1);
   const onRadioChange = (e: any) => {
@@ -64,11 +64,9 @@ function LoginPage() {
   return (<div className={styles.masterPageCon}>
     <div className={styles.centerCon} >
       <div className={styles.leftPart}>
-        <div className={styles.hrLine}></div>
-        <div className={styles.welcome}>欢迎登录</div>
-        <div className={styles.name}>react项目框架</div>
       </div>
       <div className={styles.rightPart}>
+        <div className={styles.name}>react项目框架</div>
         <Radio.Group
           className={styles.radioGroup}
           onChange={onRadioChange}

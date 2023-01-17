@@ -5,8 +5,8 @@ const getIPAddress = () => {
   const interfaces = os.networkInterfaces();
   for (const devName in interfaces) {
     const iFace = interfaces[devName];
-    for (let i = 0; i < iFace.length; i++) {
-      const alias = iFace[i];
+    for (let one of iFace) {
+      const alias = one;
       if (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal) {
         return alias.address;
       }
@@ -209,7 +209,7 @@ app.post('/admin/admin/get_permissions_navigate_list', function (req, res) {
       sort: 2,
     },
   ];
-  if (loginInfo.username === 'admin') {
+  if (req.body.username === 'admin') {
     list = list.concat(adminList);
   }
   res.send({

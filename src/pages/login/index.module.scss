@@ -5,7 +5,7 @@
   background-position: center;
   background-size: cover;
   height: 100vh;
-  background-image: url('../../assets/loginBac.png');
+  background-image: url('../../assets/bg.svg');
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,58 +20,36 @@
   align-items: center;
   align-content: center;
   box-sizing: border-box;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 922px;
-  height: 650px;
-  background-image: url('../../assets/loginFormBac.png');
   .leftPart {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    padding-left: 60px;
-    box-sizing: border-box;
-    .hrLine {
-      width: 44px;
-      height: 4px;
-      background-color: #fff;
-      margin-bottom: 20px;
-    }
-    .welcome {
-      line-height: 24px;
-      font-size: 24px;
-      text-align: left;
-      color: #fff;
-      letter-spacing: 1px;
-      margin-bottom: 20px;
-    }
-    .name {
-      line-height: 24px;
-      font-size: 24px;
-      text-align: left;
-      color: #fff;
-      letter-spacing: 1px;
-      margin-bottom: 40px;
-    }
+    width: 800px;
+    height: 600px;
+    background-image: url('../../assets/bacLeft.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-right: 20px;
   }
   .rightPart {
+    background: #fff;
+    border-radius: 8px;
     width: 560px;
     height: 560px;
-    padding-left: 0;
-    padding-right: 40px;
-    padding-top: 70px;
-    padding-bottom: 20px;
+    padding: 40px 98px;
     box-sizing: border-box;
-    z-index: 2;
+    .name {
+      font-size: 26px;
+      margin-bottom: 40px;
+      font-weight: 600;
+      color: #333333;
+      line-height: 34px;
+      text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.16);
+      text-align: center;
+    }
     .formCon {
       width: 424px;
       margin: 0 auto;
-      padding-top: 70px;
+      padding-top: 50px;
       box-sizing: border-box;
-
       .formitem {
         width: 100%;
         height: 53px;
@@ -91,8 +69,8 @@
           margin: 0;
         }
         .account {
-          width: 18px;
-          height: 20px;
+          width: 24px;
+          height: 24px;
           margin-right: 12px;
         }
         .formiteminput {
@@ -103,7 +81,7 @@
         width: 100%;
         height: 53px;
         opacity: 1;
-        background-color: #0270c3;
+        background-color: #1a7ee9;
         border-radius: 4px;
         color: #fff;
         font-size: 24px;
@@ -138,7 +116,7 @@
 
       &:first-child {
         margin-right: 90px;
-        color: #0270c3;
+        color: #1a7ee9;
       }
     }
   }
